@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I'm Frond of You</title>
+
+    <link type="image/png" href="" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/a9bc7af8fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h2>IFOY</h2></a>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div id="plantImg" class="wrapper">
+
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="big" id="title">
+                <div class="wrapper">
+                    <h1>I'm Frond of You</h1>
+                    <h2>Find your perfect plant</h2>
+                    <span class="right">
+                        <a href="#light"><p class="move">get started</p></a>
+                    </span>
+                </div>
+            </div>
+            <div id="plantQuiz">
+                <form>
+                    <div class="big" id="light">
+                        <div class="wrapper">
+                            <label for="amountOfLight"><h3>How much light does your space get?</h3></label>
+                            <fieldset>
+                                <input type="radio" name="amountOfLight" value="direct" id="direct" required>
+                                <label class="input" for="direct">
+                                    <p>Direct Sunlight</p>
+                                </label>
+                                <input type="radio" name="amountOfLight" value="bright" id="bright">
+                                <label class="input" for="bright">
+                                    <p>Bright, Indirect Light</p>
+                                </label>
+                                <input type="radio" name="amountOfLight" value="medium" id="medium">
+                                <label class="input" for="medium">
+                                    <p>Medium Light</p>
+                                </label>
+                                <input type="radio" name="amountOfLight" value="shade" id="shade">
+                                <label class="input" for="shade">
+                                    <p>Shade or Filtered Light</p>
+                                </label>
+                            </fieldset>
+                            <span class="right">
+                                <a href="#care"><p class="move">keep going</p></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="big" id="care">
+                        <div class="wrapper">
+                            <label for="levelOfCare"><h3>How experienced are you with plant care?</h3></label>
+                            <input type="range" name="levelOfCare" id="levelOfCare" min="0" max="2" step="0" value="1">
+                            <div class="careLabels">
+                                <p>Novice</p>
+                                <p>Competent</p>
+                                <p>Expert</p>
+                            </div>
+                            <span class="separate">
+                                <a href="#light"><p class="back">go back</p></a>
+                                <button id="getResults" type="submit"><p class="move">get results</p></button>
+                            </span>
+                        </div>
+                        <div class="big hidden" id="results">
+                            <div class="wrapper">
+                                <h3>The ideal houseplant for your space is the</h3>
+                                <h4 id="plantName"></h4>
+                                <p id="plantDescription"></p>
+                                <span class="right">
+                                    <a href="#title" id="hideResults"><p class="move">try again</p></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="smiley">
+                <a href="https://katdevrieze.github.io"><i class="far fa-smile fa-5x"></i></a>
+            </div>
+        </section>
+    </main>
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+</body>
+</html>
