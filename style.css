@@ -152,6 +152,7 @@ img {
     justify-content: space-between;
 }
 #results {
+    background-color: ivory;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -243,6 +244,10 @@ input[type="range"] {
         margin: 2.5%;
     }
     #results {
-        overflow: scroll;
+        overflow-y: scroll;
+    }
+    #results .wrapper {
+        height: unset;
+
     }
 }
